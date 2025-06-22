@@ -1,18 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Personal Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Uma Maheswara Reddy | Portfolio</title>
   <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    img.profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #007BFF;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      color: #007BFF;
+    }
+
+    p.about {
+      font-size: 1.1em;
+      line-height: 1.6;
+      margin: 20px auto;
+      max-width: 700px;
+    }
+
     .download-button {
       display: inline-block;
-      padding: 10px 20px;
+      padding: 12px 24px;
       background-color: #007BFF;
       color: white;
       text-decoration: none;
-      border-radius: 5px;
-      font-family: sans-serif;
+      border-radius: 8px;
+      font-size: 1em;
+      transition: background-color 0.3s;
+      margin-top: 20px;
     }
 
     .download-button:hover {
@@ -21,10 +63,22 @@
   </style>
 </head>
 <body>
-  <h1>Hello, I'm Uma Maheswara Reddy.</h1>
-  <p>Welcome to my personal website hosted on GitHub Pages!</p>
+  <div class="container">
+    <!-- Profile Picture -->
+    <img src="profile.jpg" alt="Uma Maheswara Reddy" class="profile-pic" />
 
-  <!-- Download Resume Button -->
-  <a href="mahesh_resume.pdf" class="download-button" download>Download My Resume</a>
+    <!-- Name -->
+    <h1>Hello, I'm Uma Maheswara Reddy</h1>
+
+    <!-- About Section -->
+    <p class="about">
+      I'm a passionate developer, lifelong learner, and someone who enjoys building meaningful and impactful software solutions.
+      Welcome to my personal website, hosted with ❤️ on GitHub Pages! <br /><br />
+      Here, you'll find my resume, projects, and more about me.
+    </p>
+
+    <!-- Download Resume Button -->
+    <a href="mahesh_resume.pdf" class="download-button" download>Download My Resume</a>
+  </div>
 </body>
 </html>
